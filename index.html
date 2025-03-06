@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hell</title>
+<style>
+    div {background-color: skyblue; height: 50px; width: 100px; text-align: center}
+    div:hover {background-color:aquamarine}
+    div:active {background-color: lightskyblue}
+</style>
+</head>
+<body>
+    <p>welcome to epic gamer website dot com free 2026 no virus<br>
+    where i copy and paste barely altered wiki pages of everything i enjoy &#40;and work stuff too i guess&#41;<br><br>
+    wiki pages:<br>
+    - <a href="shiho.html">Shiho Hinomori</a><br>
+    - <a href="signol.html">Signol</a><br>
+    <br>
+    work stuff:<br>
+    - <a href="firstproperwebpage.html">My First Webpage</a><br>
+    - <a href="formatting.html">Formatting</a><br>
+    - <a href="linksnimages.html">Links And Images</a><br>
+    - <a style="text-decoration:none" href="htmlstyle.html" target="_blank">HTML Style</a><br>
+    - <a href="orderedlists.html">Ordered Lists</a><br>
+    - <a href="unorderedlists.html">Unordered Lists</a><br></p>
+    <a href="timetable.html"><div>Timetable</div></a><br>
+    <br>
+    <form style="opacity: 0.1;">
+        <label for="pswd">Enter access code: </label>
+        <input type="password" id="pswd">
+        <input type="button" value="Submit" onclick="checkPswd();" />
+    </form>
+    <script type="text/javascript">
+        function checkPswd() {
+            var confirmPassword = "REGULUS";
+            var password = document.getElementById("pswd").value;
+            if (password == confirmPassword) {
+                 window.location="regulus.html";
+            }
+            else{
+                alert("wrong.");
+            }
+        }
+</script>
+</body>
+</html>
