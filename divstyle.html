@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diving</title>
+</head>
+<style>
+.main {
+    width: 200px;
+    height: 200px;
+    border: 2px, solid, #4455dd;
+}
+#inner1 {
+    width: 100px;
+    height: 100px;
+    border: 2px, solid, #33aaee;
+    position: sticky;
+    top: 10px; bottom: 30px; left: 50px; right: 10px;
+}
+#inner2 {
+    width: 100px;
+    height: 100px;
+    border: 2px, solid, #ffdd44;
+    position: fixed;
+    top: 250px; bottom: 15px; left: 15px; right: 35px;
+}
+#inner3 {
+    width: 100px;
+    height: 100px;
+    border: 2px, solid, #ee6666;
+    position: absolute;
+    top: 450px; bottom: 30px; left: 40px; right: 5px;
+}
+#inner4 {
+    width: 100px;
+    height: 100px;
+    border: 2px, solid, #bbdd22;
+    position: relative;
+    top: 40px; bottom: 10px; left: 25px; right: 15px;
+}
+</style>
+<body>
+    <div class="main">
+        <div id="inner1">Sticky</div>
+    </div>
+    <div class="main">
+        <div id="inner2">Fixed</div>
+    </div>
+    <div class="main">
+        <div id="inner3">Absolute</div>
+    </div>
+    <div class="main">
+        <div id="inner4">Relative</div>
+    </div>
+    <a href="index.html">Back to home</a>
+</body>
+</html>
