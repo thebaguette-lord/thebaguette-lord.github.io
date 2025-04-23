@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+<style>
+    .button {
+  background-color: #33ccbb;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+    <button class="button" onclick="divOn()"><span>Toggle On</span></button>
+    <button class="button" onclick="divOff()"><span>Toggle Off</span></button>
+    <script>
+        function divOn() {
+            var fitnessgram = document.getElementById("the");
+            fitnessgram.style.display = "block";
+        }
+        function divOff() {
+            var fitnessgram = document.getElementById("the");
+            fitnessgram.style.display = "none";
+        }
+    </script>
+    <div id="the" style="display:none"><p>
+        The FitnessGram Pacer test is a multistage aerobic capacity test that progressively gets more difficult<br>
+        as it continues. The 20 meter Pacer test will begin in 30 seconds. Line up at the start. The running speed<br>
+        starts slowly, but gets faster each minute after you hear this signal *beep*. A single lap should be completed<br>
+        each time you hear this sound *ding*. Remember to run in a straight line, and run as long as possible. The second<br>
+        time you fail to complete a lap before the sound, your test is over. The test will begin on the word start.<br> 
+        On your mark, get ready, start.
+    </p></div>
+</body>
+</html>
