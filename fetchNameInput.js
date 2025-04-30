@@ -1,4 +1,4 @@
 function fetchInput() {
-    var name = document.getElementById("input").value;
+    var name = document.getElementById("nameinput").value;
     document.getElementById("yn").innerHTML = "Hello, I'm " + name;
 }
