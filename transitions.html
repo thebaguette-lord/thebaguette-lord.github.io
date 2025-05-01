@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    div {
+  border: 2px solid grey;
+  margin: 10px;
+  padding: 5px;
+  width: 100px;
+}
+.divOne {transition: width 2s;}
+.divOne:hover {width: 300px;}
+.divTwo {transition: border 2s;}
+.divTwo:hover {border: 10px;}
+.divThree {transition: color 2s;}
+.divThree:hover {color: #BBDD22;}   
+.divFour {transition: width 2s, border 2s, text-color 2s;}
+.divFour:hover {width:300px; border:10px; color:#BBDD22;}
+.divFive {animation-name: baseAnim;
+animation-duration: 4s;}
+
+@keyframes baseAnim{
+    0%   {Left:0px; Top:0px; background-color: Blue;}
+	25%   {Left:0px; Top:200px; background-color: Red;}
+	50%   {Left:200px; Top:200px; background-color: Yellow;}
+	75%   {Left:200px; Top:0px; background-color: Green;}
+    100%   {Left:0px; Top:0px; background-color: Yellow;}
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transitions</title>
+</head>
+<body>
+    <div id="divOne">
+        <p>Div #1</p>
+    </div> 
+    <div id="divTwo">
+        <p>Div #2</p>
+    </div> 
+    <div id="divThree">
+        <p>Div #3</p>
+    </div> 
+    <div id="divFour">
+        <p>Div #4</p>
+    </div> 
+    <div id="divFive">
+        <p>Div #5</p>
+    </div> 
+</body>
+</html>
