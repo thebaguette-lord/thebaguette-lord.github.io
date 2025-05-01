@@ -7,23 +7,27 @@
   padding: 5px;
   width: 100px;
 }
-.divOne {transition: width 2s;}
-.divOne:hover {width: 300px;}
-.divTwo {transition: border 2s;}
-.divTwo:hover {border: 10px;}
-.divThree {transition: color 2s;}
-.divThree:hover {color: #BBDD22;}   
-.divFour {transition: width 2s, border 2s, text-color 2s;}
-.divFour:hover {width:300px; border:10px; color:#BBDD22;}
-.divFive {animation-name: baseAnim;
-animation-duration: 4s;}
+
+#divOne {transition: width 2s;}
+#divOne:hover {width: 300px;}
+#divTwo {transition: border 2s;}
+#divTwo:hover {border: 10px solid grey;}
+#divThree {transition: color 2s;}
+#divThree:hover {color: #BBDD22;}   
+#divFour {transition: width 2s, border 2s, color 2s;}
+#divFour:hover {width:300px; border:10px solid grey; color:#BBDD22;}
+#divFive {position: relative;
+    animation-name: baseAnim;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;}
 
 @keyframes baseAnim{
     0%   {Left:0px; Top:0px; background-color: Blue;}
-	25%   {Left:0px; Top:200px; background-color: Red;}
-	50%   {Left:200px; Top:200px; background-color: Yellow;}
+	25%   {Left:0px; Top:200px; background-color: Yellow;}
+	50%   {Left:200px; Top:200px; background-color: Red;}
 	75%   {Left:200px; Top:0px; background-color: Green;}
-    100%   {Left:0px; Top:0px; background-color: Yellow;}
+    100%   {Left:0px; Top:0px; background-color: Blue;}
 }
 </style>
 <head>
@@ -46,6 +50,7 @@ animation-duration: 4s;}
     </div> 
     <div id="divFive">
         <p>Div #5</p>
-    </div> 
+    </div>
+    <a href="index.html">Back to home</a> 
 </body>
 </html>
