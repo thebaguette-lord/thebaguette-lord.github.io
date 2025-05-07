@@ -8,16 +8,12 @@
 <body>
     <div id="yn">Hello, I'm |n/a|</div>
     <br>
-   <form>
     <label for="nameinput">Enter your name:</label>
-    <input type="text" id="nameinput">
-    <input type="button" value="Update" onclick="fetchInput()">
-   </form> 
-   <form>
-    <label for="dateinput">Enter your date of birth:</label>
-    <input type="date" id="dateinput">
-    <input type="button" value="Update" onclick="ToRGB()">
-   </form>
+    <input type="text" id="nameinput" onchange="fetchInput()">
+    <br> 
+    <label for="dateinput">Enter your date of birth in the format 'DD-MM-YYYY':</label>
+    <input type="text" id="dateinput" onchange="ToRGB()">
+    <br>
    <a href="index.html">Back to home</a>
     <script src="fetchNameInput.js"></script>
     <script src="dateToRGB.js"></script>
