@@ -5,12 +5,23 @@
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Higher Or Lower</title>
+<style>
+    body {
+        text-align: center;
+        font-family: 'Courier New';
+        background-color:black;
+    }
+    p, label, a {
+        color: white;
+    }
+</style>
 </head>
 <body>
     <h1>Higher Or Lower!</h1>
     <p>Guess a number from 1-100 and I'll tell you if the answer is higher or lower than your guess!</p><br>
-    <label for="guess" id="field">Enter your guess!</label>
+    <label for="guess" id="field">Enter your guess!</label><br>
     <input type="text" id="guess" onchange="HoL()"><br>
+    <br>
     <a href="index.html">Back to home</a>
     <script src="HoL.js"></script>
 </body>
