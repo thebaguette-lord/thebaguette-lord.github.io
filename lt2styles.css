@@ -1,0 +1,15 @@
+h1, h2, p {
+    font-family: 'Inter';
+}
+h1, h2 {
+    text-align: center;
+}
+h2 {
+    color: #5cb85c;
+}
+.header {
+    position: sticky;
+
+    width: max-content;
+    height: min-content;
+}
