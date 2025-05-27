@@ -2,7 +2,7 @@ body {
     background-color: #f0f2f5;
 }
 h1, h2, p, a {
-    font-family:'Segoe UI';
+    font-family: 'Inter', sans-serif;
 }
 h1, h2, .navbar {
     text-align: center;
@@ -20,14 +20,18 @@ h2 {
     padding-bottom: 10px;
 }
 .navbar a {
-    text-decoration: none;  
+    text-decoration: none;
+}
+.navbar a:hover{
+    box-sizing:content-box;
+    box-shadow:black; 
 }
 .navbar li {
     list-style: none;
     display: inline;
     margin: 20px;
 }
-.header, .navbar {
+.header, .navbar a {
     background-color: #4CAF50;
     border:#4CAF50;
     border-radius: 10px;
