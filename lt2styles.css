@@ -1,15 +1,55 @@
-h1, h2, p {
-    font-family: 'Inter';
+body {
+    background-color: #f0f2f5;
 }
-h1, h2 {
+h1, h2, p, a {
+    font-family:'Segoe UI';
+}
+h1, h2, .navbar {
     text-align: center;
+}
+h1, .navbar a {
+    color: white;
+}
+h1 {
+    margin:10px;
 }
 h2 {
     color: #5cb85c;
+    margin-left: 10px; margin-right: 10px;
+    border-bottom: 3px solid #5cb85c;
+    padding-bottom: 10px;
+}
+.navbar a {
+    text-decoration: none;  
+}
+.navbar li {
+    list-style: none;
+    display: inline;
+    margin: 20px;
+}
+.header, .navbar {
+    background-color: #4CAF50;
+    border:#4CAF50;
+    border-radius: 10px;
 }
 .header {
+    padding:20px;
     position: sticky;
-
-    width: max-content;
-    height: min-content;
+    margin: -15px;
+    box-sizing:border-box;
+    top: 0px; left: 0px; right: 0px; bottom: 0px;
+    height: max-content;
+}
+.main-content{
+    padding: 10px;
+    justify-self:center;
+    background-color:white;
+    width:60%;
+}
+.section{
+    margin:10px;
+    background-color: #f9f9f9;
+    border: #f5f5f5;
+    border-radius: 10px;
+    border-style:solid;
 }
