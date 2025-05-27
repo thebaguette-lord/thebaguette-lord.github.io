@@ -20,6 +20,7 @@ h2 {
     padding-bottom: 10px;
 }
 .navbar a {
+    transition
     text-decoration: none;
 }
 .navbar a:hover{
