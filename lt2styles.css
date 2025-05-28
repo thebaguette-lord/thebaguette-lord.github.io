@@ -15,7 +15,7 @@ p{
 h1, h2, .navbar {
     text-align: center;
 }
-h1, .navbar a {
+h1, .navbar a, .footer p{
     color: white;
 }
 h1 {
@@ -24,7 +24,7 @@ h1 {
 h2 {
     color: #5cb85c;
     margin-left: 10px; margin-right: 10px;
-    border-bottom: 3px solid #5cb85c;
+    border-bottom: 2px solid #5cb85c;
     padding-bottom: 10px;
 }
 .navbar a {
@@ -43,12 +43,14 @@ h2 {
 .header, .navbar a {
     background-color: #4CAF50;
     border:#4CAF50;
-    border-radius: 10px;
+    
 }
 .header {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     padding:20px;
     position: sticky;
-    margin: -15px;
+    margin: -8px;
     box-sizing:border-box;
     top: 0px; left: 0px; right: 0px; bottom: 0px;
     height: max-content;
@@ -58,9 +60,13 @@ h2 {
     justify-self:center;
     background-color:white;
     width:60%;
+    box-shadow: 3px 3px 3px 3px #00000022;
+    border-radius:5px;
+    margin-bottom:100px;
 }
 .section{
     margin:10px;
+    margin-bottom:30px;
     background-color: #f9f9f9;
     border: #f5f5f5;
     border-radius: 10px;
@@ -88,5 +94,14 @@ tbody tr:nth-child(2n){
     background-color: #f2f2f2;
 }
 ol li{
-    line-height:25px;
+    line-height:30px;
+    margin-inline:25px;
+}
+.footer{
+    background-color: #343a40;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    padding:20px;
+    margin: -8px;
+    height:max-content;
 }
