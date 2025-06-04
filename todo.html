@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+</head>
+<body>
+    <label for="input" id="inform">Input a task to add to your list!</label><br>
+    <input type="text" id="input"><br>
+    <input type="button" value="Add Task" onclick="appendToDo()">
+    <label for="input2" id="deform">Input the number of the task you wish to remove.</label>
+    <input type="number" id="input2">
+    <input type="button" value="Remove Task" onclick="severToDo()">
+    <script src="appendToDo.js"></script>
+    <ol id="todolist">
+        
+    </ol>
+</body>
+</html>
