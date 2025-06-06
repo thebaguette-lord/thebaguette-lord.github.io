@@ -6,23 +6,21 @@ function appendToDo() {
     tasks.push(newtask);
     FixList();
 }
-function severToDo() {
-    remove = document.getElementById("input2").value;
-    delete tasks[remove-1]
+function severToDo(remove) {
+    tasks.splice(remove-1,1)
     FixList();
 }
 function FixList() {
     let list = document.getElementById("todolist");
     list.replaceChildren("");
     for (i = 0; i < tasks.length; ++i) {
-        if (tasks[i] == undefined) {
-            tasks.copyWithin(i,i+1);
-            tasks.pop();
-        }
-        if (i < tasks.length) {
             let li = document.createElement("li");
             li.innerText = tasks[i];
-            list.appendChild(li);
-        }    
+            list.appendChild(li);    
+            const deleteBtn = document.createElement('button');
+            deleteBtn.innerText = 'Delete';
+            //deleteBtn.classList.add('a');
+            deleteBtn.addEventListener('click', () => {severToDo(i)});
+            li.appendChild(deleteBtn);
     }
 }
