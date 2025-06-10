@@ -1,13 +1,12 @@
 const tasks = [];
 var newtask = "getOutOfMyCode"
-var remove = "naneinf"
 function appendToDo() {
     newtask = document.getElementById("input").value;
     tasks.push(newtask);
     FixList();
 }
 function severToDo(remove) {
-    tasks.splice(remove-1,1)
+    tasks.splice(remove,1)
     FixList();
 }
 function FixList() {
@@ -18,9 +17,10 @@ function FixList() {
             li.innerText = tasks[i];
             list.appendChild(li);    
             const deleteBtn = document.createElement('button');
-            deleteBtn.innerText = 'Delete';
-            //deleteBtn.classList.add('a');
-            deleteBtn.addEventListener('click', () => {severToDo(i)});
+            const delval = i;
             li.appendChild(deleteBtn);
+            deleteBtn.innerText = 'Delete';
+            deleteBtn.addEventListener('click', () => {severToDo(delval)});
+            
     }
 }
