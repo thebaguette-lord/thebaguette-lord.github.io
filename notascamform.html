@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>legit form</title>
+</head>
+<body>
+    <h1>legit form</h1>
+    <form action="stealDeets.html">
+        <fieldset class="formItem">
+            <legend>Name:</legend>
+            <span>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName">
+            </span>
+            <span>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName">
+            </span>
+        </fieldset>
+        <div class="formItem">
+            <label for="dateOfBirth">Date Of Birth:</label>
+            <input type="date" id="dateOfBirth" name="dob">
+        </div>
+        <div class="formItem">
+            <label for="favCol">Favourite Colour:</label>
+            <input type="color" id="favCol" name="colour">
+        </div>
+        <fieldset class="formItem">
+            <legend>Who is the coolest teacher?</legend>
+            <div>
+                <label for="sean">Sean</label>
+                <input type="radio" id="sean" name="coolestTeacher" value="sean">
+            </div>
+            <div>
+                <label for="callum">Callum</label>
+                <input type="radio" id="callum" name="coolestTeacher" value="callum">
+            </div>
+            <div>
+                <label for="myself">Myself</label>
+                <input type="radio" id="myself" name="coolestTeacher" value="myself">
+            </div>
+        </fieldset>
+        <div class="formItem">
+            <label for="pswd">Your Password:</label>
+            <input type="password" id="pswd" name="pwd">
+        </div>
+        <button class="formItem">Submit</button>
+    </form>
+</body>
+</html>
