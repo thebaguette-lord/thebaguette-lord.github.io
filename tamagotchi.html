@@ -234,13 +234,7 @@
 </head>
 <body>
     <div class="container">
-        <!-- Add Pet Name Element -->
-        <div class="tamagotchi-name">
-            <span>Name</span>
-            <div id="tamagotchiNameHolder" class="tamagotchi-name">
-                <input type="text" id="petName" name="petName">
-            </div>
-        </div>
+        <input class="pet-name" id="petName" name="petName" value="My Virtual Pet">
 
         <div class="tamagotchi-display">
             <div id="tamagotchiEmoji" class="tamagotchi-emoji">🥚</div>
@@ -527,11 +521,19 @@
 
         /* Cookie Get Function */
         function getCookies() {
-            const dataReq = ["name=", "hunger=", "happiness=", "sleep=", "age="]
-            dataPlain = document.cookie;
-            for (i in dataReq)
-            
-                tamagotchi.name = dataPlain.indexOf("name=")+5;
+            let dataPlain = document.cookie;
+            const dataArray = dataPlain.split(";");
+            tamagotchi.name = dataArray[0].slice(dataArray[0].indexOf("=")+1);
+            console.log(tamagotchi.name);
+            tamagotchi.hunger = dataArray[1].slice(dataArray[1].indexOf("=")+1);
+            console.log(tamagotchi.hunger);
+            tamagotchi.happiness = dataArray[2].slice(dataArray[2].indexOf("=")+1);
+            console.log(tamagotchi.happiness);
+            tamagotchi.sleep = dataArray[3].slice(dataArray[3].indexOf("=")+1);
+            console.log(tamagotchi.sleep);
+            tamagotchi.age = dataArray[4].slice(dataArray[4].indexOf("=")+1);
+            console.log(tamagotchi.age);
+            console.log(dataArray);
         }
 
 
@@ -546,7 +548,14 @@
 
         // Initial setup on window load
         window.onload = function() {
-            resetGame(); // Initialize the game state and start the loop
+            let checkv = document.cookie
+            if (checkv == true) {
+                getCookies();
+            }
+            else {
+                resetGame(); // Initialize the game state and start the loop
+            }
+                
         };
     </script>
 </body>
