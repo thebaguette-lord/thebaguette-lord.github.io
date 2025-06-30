@@ -534,6 +534,11 @@
             tamagotchi.age = dataArray[4].slice(dataArray[4].indexOf("=")+1);
             console.log(tamagotchi.age);
             console.log(dataArray);
+            disableButtons(false);
+            updateStatsDisplay();
+            updateTamagotchiEmoji();
+            clearInterval(gameInterval);
+            gameInterval = setInterval(gameLoop, gameSpeed*1000);
         }
 
 
@@ -548,8 +553,7 @@
 
         // Initial setup on window load
         window.onload = function() {
-            let checkv = document.cookie
-            if (checkv == true) {
+            if (document.cookie) {
                 getCookies();
             }
             else {
