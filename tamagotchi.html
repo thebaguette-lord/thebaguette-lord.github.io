@@ -524,6 +524,7 @@
             let dataPlain = document.cookie;
             const dataArray = dataPlain.split(";");
             tamagotchi.name = dataArray[0].slice(dataArray[0].indexOf("=")+1);
+            petName.value=tamagotchi.name;
             console.log(tamagotchi.name);
             tamagotchi.hunger = dataArray[1].slice(dataArray[1].indexOf("=")+1);
             console.log(tamagotchi.hunger);
@@ -548,6 +549,7 @@
         playButton.addEventListener('click', () => {play()});
         sleepButton.addEventListener('click', () => {putToSleep()});
         resetButton.addEventListener('click', () => {resetGame()});
+        petName.addEventListener('change', () => {tamagotchi.name=petName.value});
 
         
 
