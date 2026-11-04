@@ -44,9 +44,13 @@
     <script type="text/javascript">
         function checkPswd() {
             var confirmPassword = "REGULUS";
+            var newPassword = "FLEETINGMEMORY";
             var password = document.getElementById("pswd").value;
             if (password == confirmPassword) {
                  window.location="regulus.html";
+            }
+            else if (password == newPassword) {
+                window.location="everstone.html";
             }
             else{
                 alert("wrong.");
